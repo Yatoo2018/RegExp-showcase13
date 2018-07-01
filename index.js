@@ -2,7 +2,7 @@
  * @Author: kael 
  * @Date: 2018-02-14 17:50:28 
  * @Last Modified by: kael
- * @Last Modified time: 2018-07-01 14:44:42
+ * @Last Modified time: 2018-07-01 15:52:39
  */
 
 function escapeRegExp(string) {
@@ -12,7 +12,7 @@ function escapeRegExp(string) {
 module.exports = {
   // lookaround
   case1: (str) => {
-    return /^(?!([img])(?=\1))[img]+$/.test(str);
+    return /^(?!([img])(?=.*\1))[img]+$/.test(str);
   },
   case2: () => {
     console.log('\t----------------------------');

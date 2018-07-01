@@ -2,7 +2,7 @@
  * @Author: kael 
  * @Date: 2018-02-14 17:35:48 
  * @Last Modified by: kael
- * @Last Modified time: 2018-07-01 14:41:57
+ * @Last Modified time: 2018-07-01 15:53:35
  */
 
 const assert = require('assert');
@@ -33,6 +33,7 @@ describe('正则表达式', () => {
     [
       'gg',
       'gx',
+      'igi',
     ].forEach((str) => {
       assert.ok(!RegExps.case1(str));
     });
