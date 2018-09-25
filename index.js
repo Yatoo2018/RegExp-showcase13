@@ -12,7 +12,8 @@ function escapeRegExp(string) {
 module.exports = {
   // lookaround
   case1: (str) => {
-    return /^(?!([img])(?=.*\1))[img]+$/.test(str);
+    // return /^(?!([img])(?=.*\1))[img]+$/.test(str);
+    return /^(([img])(?!.*\2))+$/.test(str)
   },
   case2: () => {
     console.log('\t----------------------------');
